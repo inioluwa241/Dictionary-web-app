@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary web App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/45ce2a55f7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="sub-body">
+    <header>
+      <nav>
+        <i class="fa-solid fa-book dic-icon"></i>
+        <div>
+          <select name="fonts" id="select_font">
+            <option value="serif">serif</option>
+            <option value="sans-serif ">sans-seriff</option>
+            <option value="monospace">monospace</option>
+          </select>
+          <div class="vert-line"></div>
+          <label class="toggle-switch">
+            <input type="checkbox" id="themeToggle" />
+            <span class="slider"></span>
+          </label>
+          <button aria-label="Toggle Dark Mode" class="theme-toggle">
+            <i class="fa-regular fa-moon"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="search-bar">
+        <form role="search">
+          <input type="text" placeholder="Search a word" aria-label="Search" id="search-word" />
+          <button type="submit" aria-label="Search" id="submit-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </section>
+
+      <h2 class="make-a-search">Search for a word...</h2>
+
+      <article class="word-definition">
+        <div class="article-head">
+          <div class="article-sub-head">
+            <h1>keyboard</h1>
+            <p class="phonetics">/ˈkiː.bɔːd/</p>
+          </div>
+          <button class="play-audio" aria-label="Play Pronunciation">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+        <section class="word-meaning" id="noun">
+          <div class="class-speech">
+            <h2>noun</h2>
+            <hr />
+          </div>
+          <h5>Meaning</h5>
+          <ul>
+            <li>
+              (etc.) A set of keys used to operate a typewriter, computer, etc.
+            </li>
+            <li>
+              A component of many instruments including the piano, organ, and
+              harpsichord...
+            </li>
+          </ul>
+        </section>
+        <section class="word-synonyms">
+          <p>Synonyms</h3>
+            <ul class="synonyms-list">
+                <li class="synonym-li">
+                    <p class="synonym-link" >electronic keyboard</p>
+
+                </li>
+            </ul>
+        </section>
+
+        <section class="word-meaning" id="verb">
+          <div class="class-speech">
+            <h2>verb</h2>
+            <hr />
+          </div>
+
+          <h5>Meaning</h5>
+
+          <ul>
+            <li>To type on a computer keyboard.</li>
+          </ul>
+
+          
+          <blockquote>
+            <ul>
+                <li>
+            “Keyboarding is the part of this job I hate the most.”
+        </li>
+        </ul>
+          </blockquote>
+        </section>
+
+        <section class="word-source">
+          <h3>Source</h3>
+          <p>
+            <a
+              href="https://en.wiktionary.org/wiki/keyboard"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://en.wiktionary.org/wiki/keyboard
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </p>
+        </section>
+      </article>
+    </main>
+</div>
+
+
+<script src="./script.js"></script>
+  </body>
+</html>
