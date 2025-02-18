@@ -29,6 +29,7 @@ body {
 
 .sub-body {
   width: 100%;
+  display: none;
 }
 
 /* Header */
@@ -38,7 +39,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  /* max-width: 90%; */
 }
 
 nav {
@@ -46,7 +46,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  /* font-size: 1rem; */
 }
 
 .dic-icon {
@@ -150,7 +149,6 @@ form {
   border-radius: 25px;
   padding: 0.5rem 1rem;
   width: 90%;
-  /* max-width: 400px; */
   padding: 1.3rem 2rem;
 }
 
@@ -219,7 +217,6 @@ button {
 }
 
 .class-speech {
-  /* display: flex; */
   display: grid;
   grid-template-columns: 0.2fr 0.8fr;
   align-items: center;
@@ -270,7 +267,6 @@ li {
 }
 
 .word-synonyms h3 {
-  /* font-size: 1.3rem; */
   font-weight: 600;
 }
 
@@ -314,8 +310,6 @@ blockquote ul {
 }
 
 .word-source a {
-  /* color: var(--accent-color); */
-  /* text-decoration: none; */
   color: black;
   display: flex;
   align-items: center;
@@ -363,4 +357,37 @@ input:checked + .slider::before {
 /* JS CLASSES */
 .hidden {
   display: none;
+}
+
+.error {
+  border: 1px solid red;
+}
+.error-text {
+  color: red;
+}
+
+/* Spinner styles */
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #3498db;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Center the spinner */
+#data-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
 }
